@@ -18,7 +18,7 @@ public class Tamer extends Character {
     public Tamer() {
 	_name = "Tamer";
 	_hitPts = 125;
-	_strength = 100 + (int)(Math.random() * 100);//impossible for monster to win, but not as drastically as before
+	_strength = 40 + (int)(Math.random() * 160);//impossible for monster to win, but not as drastically as before
 	_defense = 10;
 	_attack = .8;
     }
