@@ -35,5 +35,23 @@ public class Mage extends Character {
 	_name = name;
     }
 
+	public void normalize() {
+	_defense = 40;
+	_attack = 0.4;
+    }
+	
+	public void specialize() {
+	_defense = 20;
+	_attack = .75;
+    }
+	
+	public static String about() {
+        String s = "\n==================";
+	s += "\nABOUT THE CHARACTERS: \n";
+	s += "\n - Mages: Mages do magic. Strength at 80. Defense at 60. Attack at .4.\n";
+	s += "==================";
+	s += "\n\n";
+	return s;	
+    }
     
 }//end class Mage

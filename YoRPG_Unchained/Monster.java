@@ -19,5 +19,23 @@ public class Monster extends Character {
 	_attack = 1;
     }
 
+	public void normalize() {
+	_defense = 40;
+	_attack = 0.4;
+    }
+	
+	public void specialize() {
+	_defense = 20;
+	_attack = .75;
+    }
+	
+	public static String about() {
+        String s = "\n==================";
+	s += "\nABOUT THE CHARACTERS: \n";
+	s += "\n A monster is not playable, perhaps.\n";
+	s += "==================";
+	s += "\n\n";
+	return s;	
+    }
 
 }//end class Monster

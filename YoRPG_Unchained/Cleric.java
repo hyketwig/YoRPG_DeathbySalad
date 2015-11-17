@@ -35,5 +35,25 @@ public class Cleric extends Character {
 	this();
 	_name = name;
     }
+	
+	public void normalize() {
+	_defense = 40;
+	_attack = 0.4;
+    }
+	
+	public void specialize() {
+	_defense = 20;
+	_attack = .75;
+    }
+	
+	public static String about() {
+        String s = "\n==================";
+	s += "\nABOUT THE CHARACTERS: \n";
+	s += "\n - Clerics: They only SEEM boring. Strength at 50. Defense at 30. Attack at .2.\n";
+	s += "==================";
+	s += "\n\n";
+	return s;	
+    }
+	
     
 }//end class Cleric
