@@ -81,38 +81,52 @@ public class YoRPG {
 
 	// ========================================
 	// GET PLAYER TYPE
-	System.out.println(Character.about());
-	s = "Choose a character (Type the number of your choice. You'll  get Warrior automatically if you type something else.): \n";
-	s += "\t1: Warrior\n";
-	s += "\t2: Mage\n";
-	s += "\t3: Rogue\n";
-	s += "\t4: Cleric\n";
-	s += "\t5: Tamer\n";
-	s += "Selection: ";
-	System.out.print( s );
+		//System.out.println(Character.about());
+	boolean sure = false;
+	int attempt = 0;
+	while (!sure){
+		s = "Choose a character (Type the number of your choice. You'll  get Warrior automatically if you type something else.): \n";
+		s += "\t1: Warrior\n";
+		s += "\t2: Mage\n";
+		s += "\t3: Rogue\n";
+		s += "\t4: Cleric\n";
+		s += "\t5: Tamer\n";
+		s += "Selection: ";
+		System.out.print( s );
 
-	try {
-	    character = Integer.parseInt( in.readLine() );
-	    
-	    //instantiate the player's character
-	    if (character == 2) {
-		pat = new Mage( name );
-	    }
-	    else if (character == 3) {
-		pat = new Rogue( name );
-	    }
-	    else if (character == 4) {
-		pat = new Cleric( name );
-	    }
-	    else if (character == 5) {
-		pat = new Tamer( name );
-	    }
-	    else {
-		pat = new Warrior( name );
-	    }
+		try {
+			character = Integer.parseInt( in.readLine() );
+			
+			//instantiate the player's character
+			if (character == 2) {
+			pat = new Mage( name );
+			}
+			else if (character == 3) {
+			pat = new Rogue( name );
+			}
+			else if (character == 4) {
+			pat = new Cleric( name );
+			}
+			else if (character == 5) {
+			pat = new Tamer( name );
+			}
+			else {
+			pat = new Warrior( name );
+			}
+		}
+		catch ( IOException e ) { }
+		
+		System.out.println(pat.about());
+		System.out.println("Are you sure? (Y/N)");
+		try {
+			String confirm = in.readLine();
+			if (confirm.toLowerCase().equals("y") || confirm.toLowerCase().equals("yes") || attempt == 100)
+				break;
+			else
+				attempt += 1;
+		}
+		catch (Exception e){}
 	}
-	catch ( IOException e ) { }
-
     }//end newGame()
 
 
