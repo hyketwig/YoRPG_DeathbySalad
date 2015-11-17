@@ -19,7 +19,7 @@ public class Rogue extends Character {
     public Rogue() {
 	_name = "Rogue";
 	_hitPts = 125;
-	_strength = 60 + (int)(Math.random() * 50) ;//give the monster a chance to receive no damage, but mostly...
+	_strength = 20 + (int)(Math.random() * 70) ;//give the monster a chance to receive no damage, but mostly...
 	_defense = 70;
 	_attack = .35;
     }
