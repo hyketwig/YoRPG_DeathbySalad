@@ -19,7 +19,7 @@ public class Warrior extends Character {
     public Warrior() {
 	_name = "Warrior";
 	_hitPts = 125;
-	_strength = 100;
+	_strength = 60 + (int)(Math.random()*60);//kinda strong, potentially lethal
 	_defense = 40;
 	_attack = .4;
     }
