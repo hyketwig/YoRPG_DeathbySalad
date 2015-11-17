@@ -1,7 +1,7 @@
 // Team Death by Salad - Jannie Li, Joel Ye, Bayle Smith-Salzberg
 // APCS1 pd10
-// HW30 -- Ye Olde Role Playing Game, Expanded
-// 2015-11-13
+// HW31 -- Ye Olde Role Playing Game, Unchained
+// 2015-11-16
 
 /*=============================================
   class Character -- superclass for combatants in Ye Olde RPG
