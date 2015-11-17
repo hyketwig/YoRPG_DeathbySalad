@@ -46,7 +46,7 @@ public class Cleric extends Character {
 	_attack = .75;
     }
 	
-	public static String about() {
+	public String about() {
         String s = "\n==================";
 	s += "\nABOUT THE CHARACTERS: \n";
 	s += "\n - Clerics: They only SEEM boring. Strength at 50. Defense at 30. Attack at .2.\n";

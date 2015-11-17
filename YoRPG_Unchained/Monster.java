@@ -29,7 +29,7 @@ public class Monster extends Character {
 	_attack = .75;
     }
 	
-	public static String about() {
+	public String about() {
         String s = "\n==================";
 	s += "\nABOUT THE CHARACTERS: \n";
 	s += "\n A monster is not playable, perhaps.\n";

@@ -7,7 +7,7 @@
   class Character -- superclass for combatants in Ye Olde RPG
   =============================================*/
 
-public class Character {
+public abstract class Character {
 
     // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
     protected String _name; //monsters don't have names...?

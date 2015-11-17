@@ -45,7 +45,7 @@ public class Mage extends Character {
 	_attack = .75;
     }
 	
-	public static String about() {
+	public String about() {
         String s = "\n==================";
 	s += "\nABOUT THE CHARACTERS: \n";
 	s += "\n - Mages: Mages do magic. Strength at 80. Defense at 60. Attack at .4.\n";
