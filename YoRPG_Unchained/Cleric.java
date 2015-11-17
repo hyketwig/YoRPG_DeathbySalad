@@ -20,7 +20,7 @@ public class Cleric extends Character {
     public Cleric() {
 	_name = "Cleric";
 	_hitPts = 125;
-	_strength = 50 + (int)(Math.random() * 5); //not so much strength, but at least has the power to overcome the monster
+	_strength = 50 + (int)(Math.random() * 40); //not so much strength, but at least has the power to overcome the monster
 	_defense = 30;
 	_attack = .2;
     }
