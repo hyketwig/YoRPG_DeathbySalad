@@ -19,7 +19,7 @@ public class Mage extends Character {
     public Mage() {
 	_name = "Mage";
 	_hitPts = 125;
-	_strength = 80;
+	_strength = 50 + (int) (Math.random() * 30);
 	_defense = 60;
 	_attack = .4;
     }
